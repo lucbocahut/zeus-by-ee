@@ -1,0 +1,61 @@
+{
+  "name": "zeus",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.121.0",
+    "@babel/runtime": "^7.17.2",
+    "@mdi/font": "^6.7.96",
+    "@notionhq/client": "^1.0.4",
+    "body-parser": "^1.19.2",
+    "buefy": "^0.9.16",
+    "bytebuffer": "^5.0.1",
+    "cardinal": "^2.1.1",
+    "csvtojson": "^2.0.10",
+    "dayjs": "^1.10.7",
+    "deep-object-diff": "^1.1.7",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.3",
+    "imap-simple": "^5.1.0",
+    "jquery": "^3.6.0",
+    "jsdom": "^20.0.0",
+    "jspdf": "^2.5.1",
+    "libphonenumber-js": "^1.9.51",
+    "ln-service": "^54.9.1",
+    "lodash": "^4.17.21",
+    "meteor-node-stubs": "^0.4.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-localstorage": "^2.2.1",
+    "nodemailer": "^6.7.2",
+    "papaparse": "^5.3.1",
+    "pdfkit": "^0.13.0",
+    "qrcode": "^1.5.0",
+    "simpl-schema": "^1.12.0",
+    "simple-sha256": "^1.1.0",
+    "ssh2": "^0.8.9",
+    "ssh2-sftp-client": "^9.0.4",
+    "strong-soap": "^3.4.1",
+    "vue": "^2.6.14",
+    "vue-meteor-tracker": "^2.0.0-beta.5",
+    "vue-router": "^3.5.3",
+    "xlsx": "file:vendor/xlsx-0.18.9.tgz",
+    "xml2js": "^0.4.23"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "javascript-state-machine": "^3.1.0",
+    "standard": "^16.0.4"
+  }
+}
